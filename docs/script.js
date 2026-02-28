@@ -1314,7 +1314,7 @@ if(document.querySelector(".book-container")){
                         document.querySelectorAll(".book-time-wrapper").forEach(wrapper => {
                             if(wrapper.id.replace(/-/g, ":") == time){
                                 bookedWrappers.push(wrapper);
-                                //wrapper.style.display = "none";
+                                wrapper.style.display = "none";
                             } else {
                                 wrapper.querySelector("i.time-trash").onclick = function(e){
                                     e.stopPropagation();
