@@ -1260,6 +1260,7 @@ if(document.querySelector(".book-container")){
             }
         }
         let fullDate = year + "-" + monStr + "-" + dateStr;
+        console.log(fullDate);
         const dataToSend = { date: fullDate };
 
         try {
