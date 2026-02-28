@@ -1246,7 +1246,7 @@ if(document.querySelector(".book-container")){
         if(monStr.length == 1){
             monStr = "0" + monStr;
         }
-        let dateStr = document.querySelector(".lac-mon-active").textContent;
+        let dateStr = document.querySelector(".book-cal-active").textContent;
         if(dateStr.length == 1){
             dateStr = "0" + dateStr;
         }
