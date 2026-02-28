@@ -1251,14 +1251,6 @@ if(document.querySelector(".book-container")){
             dateStr = "0" + dateStr;
         }
         let year = Number(currentYear);
-        if(Number(document.querySelector("span.lac-top-mon").textContent) > Number(dateStr)){
-            monStr = String(Number(monStr) + 1).padStart("0", 2);
-                        if(monStr.length == 1) monStr = "0" + monStr;
-            if(monStr == "13"){
-                monStr = "01";
-                year++;
-            }
-        }
         let fullDate = year + "-" + monStr + "-" + dateStr;
         console.log(fullDate);
         const dataToSend = { date: fullDate };
