@@ -1310,6 +1310,7 @@ if(document.querySelector(".book-container")){
                     if(timesTaken.length == ""){
                         timesTaken = ["xx:xx"];
                     }
+                    console.log("timestaken: " + timesTaken);
                     timesTaken.forEach(time => {
                         document.querySelectorAll(".book-time-wrapper").forEach(wrapper => {
                             if(wrapper.id.replace(/-/g, ":") == time){
